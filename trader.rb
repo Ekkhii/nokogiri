@@ -1,17 +1,30 @@
-require 'open-uri'
 require 'nokogiri'
+require 'httparty'
+require 'byebug'
+require 'open-uri'
+require 'timeout'
 
-def trader_de_l_obscur(url)
 
-pages = Nokogiri::HTML(open(url))
+def scraper 
 
-hash = Hash.new
+	url = "https://coinmarketcap.com/all/views/all/"
+	unparsed_pages = HTTParty.get(url)
+	parsed_pages = Nokogiri::HTML(unparsed_pages)
+	lignes = parsed_pages.css('tr')
+	
+	
+	
+	lignes.each do |extract|
 
-crypto = pages.css("a.currency-name-container")
-hash.merge!(Nom: crypto)
+		resultat = {
+			nom: extract.css('.currency-name-container').text, 
+			prix: extract.css('.price').text,
+		}
+		puts resultat
 
-puts hash
+
+	end
 
 end
 
-trader_de_l_obscur('https://coinmarketcap.com/all/views/all/')
+scraper
