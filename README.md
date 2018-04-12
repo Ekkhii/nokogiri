@@ -1,9 +1,9 @@
 ########################################################
 ########################################################
 
-Fichiers crées par Berangere MARTIN (@ekkhi) et Emmanuel JOUVE (@tinoun)
+Fichiers crées par **Berangere MARTIN (@ekkhi)** et **Emmanuel JOUVE (@tinoun)**
 
-########################################################
+-------------
 
 A. ROUTE DE LA MAIRIE
 	1. Sortir l'adresse mail d'une ville : mail.rb
