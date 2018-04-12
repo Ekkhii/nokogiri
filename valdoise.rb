@@ -13,7 +13,8 @@ hash = Hash.new
 #premiere boucle qui sors les url de chaque ville
 	links.each do |ville|
 		url = "http://annuaire-des-mairies.com" + ville['href']
- 		hash.merge!(name: url)
+ 		name = ville.children.text
+ 		hash.merge!(name: name)
 #deuxieme boucle qui sors les mails de chaque page
 		ville.each do |mail|
 			page = Nokogiri::HTML(open(url))
