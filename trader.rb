@@ -1,15 +1,10 @@
 require 'nokogiri'
-require 'httparty'
-require 'byebug'
 require 'open-uri'
-require 'timeout'
-
 
 def scraper 
 
 	url = "https://coinmarketcap.com/all/views/all/"
-	unparsed_pages = HTTParty.get(url)
-	parsed_pages = Nokogiri::HTML(unparsed_pages)
+	parsed_pages = Nokogiri::HTML(open(url))
 	lignes = parsed_pages.css('tr')
 	
 	
