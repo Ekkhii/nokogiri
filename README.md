@@ -2,11 +2,11 @@ Fichiers crées par **Berangere MARTIN (@ekkhi)** et **Emmanuel JOUVE (@tinoun)*
 
 -------------
 
-A. ROUTE DE LA MAIRIE
+* ROUTE DE LA MAIRIE
 	* Sortir l'adresse mail d'une ville : mail.rb
 	* Sortir TOUTES les adresses mails d'un département : valdoise.rb
 
-B. TRADER DE L'OBSCUR  
+* TRADER DE L'OBSCUR  
 
 
 Merci pour la correction ! 
