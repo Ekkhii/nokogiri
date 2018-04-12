@@ -8,7 +8,7 @@ Fichiers crées par **Berangere MARTIN (@ekkhi)** et **Emmanuel JOUVE (@tinoun)*
 
 * TRADER DE L'OBSCUR  : trader.rb
 
-* Route des incubateurs : On a essayer hein, mais pas réussi :( Si toi oui, n'hésites pas à nous conseiller pour refaire l'exercice ! 
+* ROUTE DES INCUBATEURS : On a essayer hein, mais pas réussi :( Si toi oui, n'hésites pas à nous conseiller pour refaire l'exercice ! 
 
 
 Merci pour la correction ! 
